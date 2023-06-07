@@ -1,0 +1,121 @@
+<html>
+<head>
+  <title>
+    Registration Page
+  </title>
+
+<script src ="C:\Users\asus\Music\validate.js">
+</script>
+</head>
+
+<body>
+  <center>
+  <h1> Registration Form </h1>
+</center>
+  <br>
+  <table>
+    <form onsubmit = validate()>
+      <tr>
+        <td>
+          <label for="name">First Name </label>
+        </td>
+        <td>
+          <input type="text" id="name" placeholder="First Name" required >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="name">Middle Name </label>
+        </td>
+        <td>
+          <input type="text" id="name" placeholder="Middle Name">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="name">Last Name </label>
+        </td>
+        <td>
+          <input type="text" id="name" placeholder="Last Name" required >
+        </td>
+      </tr>
+
+
+      <tr>
+        <td>
+          <lebel for="gender"> Gender: </label>
+        </td>
+        <td>
+          <input type="radio"  name="gender" value="Male" />
+          <label for="Male">Male</label>
+          <input type="radio"  name="gender" value="Female" />
+          <label for="Female">Female</label>
+          <input type="radio"  name="gender" value="other" />
+          <label for="other">Other</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <lebel for="qualification"> Highest Qualification </label>
+        </td>
+        <td>
+          <select name="qualification">
+
+          <option value="Course"> Course </option>
+          <option value="P.hd"> P.hd </option>
+          <option value="Post Graduate"> Post Graduate </option>
+          <option value="Graduate"> Graduate </option>
+          <option value="12th pass"> 12th pass </option>
+          <option value="10th pass"> 10th pass </option>
+          <option value="10th fail"> 10th fail </option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="e-mail"> E-mail </label>
+        </td>
+        <td>
+          <input type="email" id="e-mail" placeholder="example@gmail.com">
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <label for="number"> Mobile Number </label>
+        </td>
+        <td>
+          <input type="number" id="Number" placeholder="Number" required >
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <lebel for="Address"> Address </label>
+        </td>
+        <td>
+          <textarea cols="80" row="5" value="Address" placeholder="Address"required >
+          </textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="password"> Password </label>
+        </td>
+        <td>
+          <input type="password" id="pass" name="pass" placeholder="Password" required >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="cpassword"> Confirm Password </label>
+        </td>
+        <td>
+          <input type="password" id="cpass" name="cpass" placeholder="Confirm Password" required >
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <center><input type="submit" name="submitbtn" value="Apply Now" /></center>
+        </td>
+      </tr>
