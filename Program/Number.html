@@ -1,0 +1,15 @@
+<script>  
+function validate(){  
+var num=document.myform.num.value;  
+if (isNaN(num)){  
+   alert("Enter Numeric Values Only");
+  return false;  
+}else{  
+  return true;  
+  }  
+}  
+</script>  
+<form name="myform" onsubmit="return validate()" >  
+Number: <input type="text" name="num"><span id="numloc"></span><br/>  
+<input type="submit" value="Submit">  
+</form> 

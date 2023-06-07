@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title> Addition</title>
+		<script>
+			function sum()
+			{
+				var num1=parseInt(document.thisform.num1.value);
+				var num2=parseInt(document.thisform.num2.value);
+				sum=num1+num2;
+				document.thisform.sum.value=sum;
+				
+			}
+		</script>
+	</head>
+	<body>
+		<center> <h1>Addition </h1></center><br>
+		<form action="#" method="post" name="thisform" >
+			<center>
+			<table>
+				<tr><td> First Value</td><td><input type="text" name="num1"></td></tr>
+				<tr><td> Second Value</td><td><input type="text" name="num2"></td></tr>
+				<tr><td> Sum</td><td><input type="text" name="sum" disabled></td></tr>
+			<table>
+			</center>
+		</form>
+		<center><button onclick="sum()" form="thisform">Sum</button>&nbsp<input type="reset" value="Reset"></center>
+	</body>
+</html>

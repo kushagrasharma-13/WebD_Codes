@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title> Registration Page</title>
+		<script>
+			function validate()
+			{
+				var user=document.thisform.user.value;
+				var pass=document.thisform.pass.value;
+				var cpass=document.thisform.cpass.value;
+				var email=document.thisform.email.value;
+				var gen=document.thisform.gen.value;
+				var hobby=document.thisform.hobby;
+				var city=document.thisform.city.value;
+				if(user=="")
+					alert("Enter ur username");
+				if(gen=="")
+					alert("Enter ur gender");
+				if(city=="")
+					alert("Enter ur city");
+				if(pass.length<5)
+					alert("Password must be greater than 5");
+				
+				if(pass.localeCompare(cpass))
+					alert("Password must be same");
+				
+				for(i=0;i<hobby.length;i++)
+				{
+					if(hobby[i].checked)
+						alert(hobby[i].value);
+				}
+				alert(user);alert(pass);alert(cpass);alert(gen);alert(city);alert(email);
+				
+				var atposition=email.indexOf("@");  
+				var dotposition=email.lastIndexOf(".");  
+				if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length)
+				{  
+					alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+					return false;  
+				} 			
+				return false;
+			}
+		</script>
+	</head>
+	<body>
+		<center> <h1>Registration Page </h1></center><br>
+		<form action="next.html" method="post" name="thisform" onsubmit="return validate()">
+			<center>
+			<table>
+				<tr><td> Name</td><td><input type="text" name="user"></td></tr>
+				<tr><td> Password</td><td><input type="password" name="pass"></td></tr>
+				<tr><td> Confirm Password</td><td><input type="password" name="cpass"></td></tr>
+				<tr><td> Email</td><td><input type="text" name="email"></td></tr>
+				<tr><td> Gender</td><td><input type="radio" name="gen" value="male">Male
+					       <input type="radio" name="gen" value="female">Female</td></tr>
+				<tr><td> Hobby</td><td><input type="checkbox" name="hobby" value="cricket">Cricket
+						       <input type="checkbox" name="hobby" value="chess">Chess
+				                       <input type="checkbox" name="hobby" value="football">Football
+						</td></tr>
+				<tr><td>City</td><td><select name="city">
+							<option value="">Select</option>
+							<option value="Mathura">Mathura</option>
+							<option value="Agra">Agra</option>
+							<option value="Other">Other</option>
+						</select></td></tr>
+				<tr><td colspan="2"><center><input type="submit" value="Register"><input type="reset" value="Reset"></center></td></tr>
+			<table>
+			</center>
+		</form>
+	</body>
+</html>
