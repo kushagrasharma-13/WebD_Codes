@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome!</title>
+</head>
+<body>
+    <script>
+        var a = parseInt(prompt("Enter First number: "));
+        var b = parseInt(prompt("Enter Second number: "));
+        var c = parseInt(prompt("Enter Third number: "));
+
+        if (a >= b && a >= c){
+            alert("the largest number is: " + a);
+        }
+
+        else if (b >= a && b >= c){
+            alert("the largest number is: " + b);
+        }
+
+        else if(c >= b && c >= a){
+            alert("the largest number is: " + c);
+        }
+        else{
+            alert("Enter valid Number")
+        }
+
+    </script>
+</body>
+</html>
