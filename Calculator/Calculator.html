@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <script src=".\Calculate.js">
+    </script>
+</head>
+<link rel="stylesheet" href=".\CSSCode.css">
+
+<body>
+    <div class="Title" align="centre">
+        Calculator
+    </div>
+
+    <table border="2" align="center" cellpadding="13" cellspacing="10" bgcolor="#6D7B8D"
+        style="border-radius:30px 30px 30px 30px;">
+
+        <form name="calculator">
+            <tr>
+                <td colspan="4" class="output" align="center">
+                    <input class="calculator" type="textfield" name="ans" value="" id=display>
+                </td>
+            </tr>
+
+            <div class="keys">
+                <tr>
+                    <td><input type="button" value="<-" onclick="sbs()"></td>
+                    <td><input type="button" value="(" onclick="abc(this.value)"></td>
+                    <td><input type="button" value=")" onclick="abc(this.value)"></td>
+                    <td><input type="button" value="/" onclick="abc(this.value)"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="7" onclick="abc(this.value)"></td>
+                    <td><input type="button" value="8" onclick="abc(this.value)"></td>
+                    <td><input type="button" value="9" onclick="abc(this.value)"></td>
+                    <td><input type="button" value="*" onclick="abc(this.value)"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="4" onclick="abc(this.value)"></td>
+                    <td><input type="button" value="5" onclick="abc(this.value)"></td>
+                    <td><input type="button" value="6" onclick="abc(this.value)"></td>
+                    <td><input type="button" value="-" onclick="abc(this.value)"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="1" onclick="abc(this.value)"></td>
+                    <td><input type="button" value="2" onclick="abc(this.value)"></td>
+                    <td><input type="button" value="3" onclick="abc(this.value)"></td>
+                    <td><input type="button" value="+" onclick="abc(this.value)"></td>
+                </tr>
+
+                <tr>
+                    <td><input type="button" value="0" onclick="abc(this.value)"></td>
+                    <td><input type="button" value="." onclick="abc(this.value)"></td>
+                    <td><input type="button" value="C" onclick="clr()"></td>
+                    <td><input type="button" value="=" onclick="solve()"></td>
+                </tr>
+    </table>
+    </div>
+</body>
+
+</html>
